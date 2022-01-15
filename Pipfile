@@ -25,4 +25,4 @@ statsmodels = "==0.12.1"
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.6.1"
