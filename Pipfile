@@ -9,21 +9,14 @@ verify_ssl = false
 name = "pypi-926"
 
 [packages]
-jsonschema = "==3.2.0"
-nose = "==1.3.7"
-nose-timer = "==1.0.1"
-numpy = "==1.19.5"
+jupyter-contrib-nbextensions = "0.5.1"
+jupyterlab = "==3.2.8"
 openseries = "==0.3.5"
-pandas = "==1.1.5"
-plotly = "==4.14.1"
-python-dateutil = "==2.8.1"
-python-stdnum = "==1.17"
-requests = "==2.25.1"
 rise = "==5.7.1"
-scipy = "==1.5.4"
-statsmodels = "==0.12.1"
+notebook = "==6.4.7"
+jupyter-nbextensions-configurator = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.6.1"
+python_version = "3.6.4"
