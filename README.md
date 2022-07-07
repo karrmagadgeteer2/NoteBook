@@ -22,8 +22,12 @@ make
 source source_me
 ```
 
+### Then to run this notebook: 
+```
+jupyter notebook openseriesnotebook.ipynb
+```
 
-### Then to run this notebook as a slideshow: 
+### Or to run it as a slideshow: 
 ```
 jupyter nbconvert --to slides openseriesnotebook.ipynb --post serve
 ```
