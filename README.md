@@ -11,7 +11,7 @@ python3 -m venv ./venv
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-The Remove-Item command will require you to answer [Y]es. And for me, the step upgrading pip encounters a permission issue that disappears if the command is executed a second time.
+For me, the step upgrading pip encounters a permission issue that disappears if the command is executed a second time.
 
 
 ### In a Mac Terminal execute the below commands:
