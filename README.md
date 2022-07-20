@@ -31,3 +31,5 @@ jupyter notebook openseriesnotebook.ipynb
 ```
 jupyter nbconvert --to slides openseriesnotebook.ipynb --post serve
 ```
+
+### [Displayed on Nbviewer](https://nbviewer.org/github/karrmagadgeteer2/NoteBook/blob/master/openseriesnotebook.ipynb)
