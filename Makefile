@@ -7,6 +7,6 @@ venv:
 	PYTHONPATH=${PWD} venv/bin/pip --version
 
 clean:
-			rm -rf venv
+	rm -rf venv
 
 .PHONY: test
