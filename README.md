@@ -1,3 +1,10 @@
+<div style="padding-right: 2rem; padding-bottom: 2rem;">
+<img src="https://sales.captor.se/captor_logo_sv_1600_icketransparent.png" alt="Captor Fund Management AB" 
+width="100" height="100" align="left"/>
+</div>
+<br>
+<br>
+
 ## An introduction to the [openseries](https://github.com/CaptorAB/OpenSeries) Python package
 
 These instructions assume that you have Python 3.10.4 installed on your machine and that you are OK to install it in a virtual environment where this notebook will be run. If not, skip the installation steps and do it your way.
