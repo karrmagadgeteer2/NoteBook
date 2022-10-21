@@ -1,6 +1,6 @@
 <div style="padding-right: 2rem; padding-bottom: 2rem;">
 <img src="https://sales.captor.se/captor_logo_sv_1600_icketransparent.png" alt="Captor Fund Management AB" 
-width="100" height="100" align="left"/>
+width="81" height="100" align="left"/>
 </div>
 <br>
 <br>
