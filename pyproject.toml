@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "openseriesnotebook"
+version = "0.1.0"
+description = "An introduction to the openseries Python package."
+authors = ["Martin Karrin <martin.karrin@captor.se>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+repository = "https://github.com/karrmagadgeteer2/NoteBook"
+
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: BSD License",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Natural Language :: English",
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: OS Independent",
+]
+
+keywords = [
+    "python",
+    "python3",
+    "plotly",
+    "pandas",
+    "finance",
+    "fintech",
+    "data-science",
+    "timeseries",
+    "timeseries-data",
+    "timeseries-analysis",
+    "investment",
+    "investment-analysis",
+    "investing"
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter_contrib_nbextensions = "*"
+jupyterlab = "*"
+notebook = "*"
+openseries = "*"
+rise = "*"
+
+[tool.black]
+line-length = 88

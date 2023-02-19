@@ -4,7 +4,10 @@ width="81" height="100" align="left" float="right"/><br/>
 <br><br>
 ## An introduction to the [openseries](https://github.com/CaptorAB/OpenSeries) Python package
 
-These instructions assume that you have Python 3.10.4 installed on your machine and that you are OK to install it in a virtual environment where this notebook will be run. If not, skip the installation steps and do it your way.
+These instructions assume that you have [Python 3.10.4](https://docs.python.org/release/3.10.4/) and 
+[Poetry](https://python-poetry.org/) installed on your machine and that you are OK to install it in a 
+virtual environment where this notebook will be run. If not, skip the installation 
+steps and do it your way.
 
 ### In Windows Powershell execute the below commands:
 ```
@@ -13,7 +16,8 @@ cd NoteBook
 python3 -m venv ./venv
 ./source_me.ps1
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install poetry==1.3.2
+poetry install
 ```
 For me, the step upgrading pip encounters a permission issue that disappears if the command is executed a second time.
 
