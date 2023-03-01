@@ -44,9 +44,9 @@ asttokens==2.2.1 ; python_version >= "3.10" and python_version < "4.0" \
 attrs==22.2.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836 \
     --hash=sha256:c9227bfc2f01993c03f68db37d1d15c9690188323c067c641f1a35ca58185f99
-babel==2.12.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:468e6cd1e2b571a1663110fc737e3a7d9069d038e0c9c4a7f158caeeafe4089c \
-    --hash=sha256:8f8b752c803e9f9e03ff219b644aceb0dbcf081c55a88ea11f86291e60a7bb68
+babel==2.12.1 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:b4246fb7677d3b98f501a39d43396d3cafdc8eadb045f4a31be01863f655c610 \
+    --hash=sha256:cc2d99999cd01d44420ae725a21c9e3711b3aadc7976d6147f622d8581963455
 backcall==0.2.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e \
     --hash=sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255
@@ -270,9 +270,9 @@ ipykernel==6.21.2 ; python_version >= "3.10" and python_version < "4.0" \
 ipython-genutils==0.2.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8 \
     --hash=sha256:eb2e116e75ecef9d4d228fdc66af54269afa26ab4463042e33785b887c628ba8
-ipython==8.10.0 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:b13a1d6c1f5818bd388db53b7107d17454129a70de2b87481d555daede5eb49e \
-    --hash=sha256:b38c31e8fc7eff642fc7c597061fff462537cf2314e3225a19c906b7b0d8a345
+ipython==8.11.0 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:5b54478e459155a326bf5f42ee4f29df76258c0279c36f21d71ddb560f88b156 \
+    --hash=sha256:735cede4099dbc903ee540307b9171fbfef4aa75cfcacc5a273b2cda2f02be04
 isoduration==20.11.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:ac2f9015137935279eac671f94f89eb00584f940f5dc49462a0c4ee692ba1bd9 \
     --hash=sha256:b2904c2a4228c3d44f409c8ae8e2370eb21a26f7ac2ec5446df141dde3452042
@@ -524,8 +524,8 @@ numpy==1.24.2 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:eef70b4fc1e872ebddc38cddacc87c19a3709c0e3e5d20bf3954c147b1dd941d \
     --hash=sha256:f64bb98ac59b3ea3bf74b02f13836eb2e24e48e0ab0145bbda646295769bd780 \
     --hash=sha256:f9006288bcf4895917d02583cf3411f98631275bc67cce355a7f39f8c14338fa
-openseries==0.10.7 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:b8b5ac74adfa15b2c6ce7cd3c3a5c153b9068df335207334545dcc3ebdb8476f
+openseries==0.10.8 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:8f5ff547f25fd7c8784e79676e66e3268a48b97ae9079736cdcb618cf5709b32
 packaging==23.0 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2 \
     --hash=sha256:b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97
@@ -909,9 +909,9 @@ statsmodels==0.13.5 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:bc1abb81d24f56425febd5a22bb852a1b98e53b80c4a67f50938f9512f154141 \
     --hash=sha256:c75319fddded9507cc310fc3980e4ae4d64e3ff37b322ad5e203a84f89d85203 \
     --hash=sha256:e1d89cba5fafc1bf8e75296fdfad0b619de2bfb5e6c132913991d207f3ead675
-tenacity==8.2.1 ; python_version >= "3.10" and python_version < "4.0" \
-    --hash=sha256:c7bb4b86425b977726a7b49971542d4f67baf72096597d283f3ffd01f33b92df \
-    --hash=sha256:dd1b769ca7002fda992322939feca5bee4fa11f39146b0af14e0b8d9f27ea854
+tenacity==8.2.2 ; python_version >= "3.10" and python_version < "4.0" \
+    --hash=sha256:2f277afb21b851637e8f52e6a613ff08734c347dc19ade928e519d7d2d8569b0 \
+    --hash=sha256:43af037822bd0029025877f3b2d97cc4d7bb0c2991000a3d59d71517c5c969e0
 terminado==0.17.1 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:6ccbbcd3a4f8a25a5ec04991f39a0b8db52dfcd487ea0e578d977e6752380333 \
     --hash=sha256:8650d44334eba354dd591129ca3124a6ba42c3d5b70df5051b6921d506fdaeae
