@@ -1,7 +1,7 @@
 # Environments
 venv/*
 
-# Poetry
+# Poetry / Dependency Management
 poetry.lock
 requirements.txt
 
