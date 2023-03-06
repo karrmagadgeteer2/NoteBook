@@ -3,6 +3,7 @@ venv/*
 
 # Poetry
 poetry.lock
+requirements.txt
 
 # Jupyter Notebook
 .ipynb_checkpoints/*
