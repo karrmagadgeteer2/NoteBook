@@ -1,6 +1,9 @@
 # Environments
 venv/*
 
+# Poetry
+poetry.lock
+
 # Jupyter Notebook
 .ipynb_checkpoints/*
 
