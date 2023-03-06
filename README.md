@@ -13,7 +13,7 @@ steps and do it your way.
 ```
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
-python3 -m venv ./venv
+python -m venv ./venv
 ./source_me.ps1
 pip install --upgrade pip
 pip install poetry==1.3.2
