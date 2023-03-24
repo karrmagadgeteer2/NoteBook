@@ -1,8 +1,8 @@
 # Environments
-venv/*
+.venv
+venv/
 
 # Poetry / Dependency Management
-poetry.lock
 requirements.txt
 
 # Jupyter Notebook
