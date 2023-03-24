@@ -41,13 +41,15 @@ keywords = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-poetry = "1.3.2"
+python = ">=3.10,<3.12"
 jupyter_contrib_nbextensions = "*"
 jupyterlab = "*"
 notebook = "*"
 openseries = "*"
 rise = "*"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "1.4.0"
 
 [tool.black]
 line-length = 88
