@@ -6,7 +6,6 @@ venv:
 
 install:
 	poetry install --with dev
-	pre-commit install
 
 clean:
 	deactivate

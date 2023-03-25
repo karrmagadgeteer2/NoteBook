@@ -16,7 +16,6 @@ if ($task -eq "active") {
     poetry install --with dev
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
-    deactivate
     Remove-Item -Path ".\venv" -Recurse -Force
 } else {
     # invalid task argument
