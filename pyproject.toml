@@ -43,11 +43,11 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
-jupyter_contrib_nbextensions = "*"
-jupyterlab = "*"
-notebook = "*"
-openseries = "*"
-rise = "*"
+jupyter_contrib_nbextensions = "^0.7.0"
+jupyterlab = "^3.6.2"
+notebook = "^6.5.3"
+openseries = "^0.11.7"
+rise = "^5.7.1"
 
 [tool.poetry.group.dev.dependencies]
 poetry = "1.4.0"
