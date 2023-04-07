@@ -12,8 +12,8 @@ if ($task -eq "active") {
     $env:PYTHONPATH = "$env:PYTHONPATH;$pwd"
     .\venv\Scripts\activate
     python -m pip install --upgrade pip
-    pip install poetry==1.4.0
-    poetry install --with dev
+    pip install poetry==1.4.2
+    poetry install
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
     Remove-Item -Path ".\venv" -Recurse -Force

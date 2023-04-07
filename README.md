@@ -4,11 +4,8 @@ width="81" height="100" align="left" float="right"/><br/>
 <br><br>
 ## An introduction to the [openseries](https://github.com/CaptorAB/OpenSeries) Python package
 
-These instructions assume that you
-have [Python 3.10](https://docs.python.org/3.10/) and
-[Poetry](https://python-poetry.org/) installed on your machine and that you are OK
-to install this project in a virtual environment. If not, feel free to do it your
-own way.
+These instructions assume that you have a compatible Python version installed on your machine and that 
+you are OK to install this project in a virtual environment. If not, feel free to do it your own way.
 
 ### In Windows Powershell execute the below commands:
 ```
@@ -16,7 +13,6 @@ git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
 ./make.ps1 -task make
 ```
-For me, the step upgrading pip encounters a permission issue that disappears if the command is executed a second time.
 
 
 ### In a Mac Terminal execute the below commands:
