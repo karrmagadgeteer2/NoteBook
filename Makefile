@@ -5,7 +5,10 @@ venv:
 	venv/bin/pip install poetry==1.4.2
 
 install:
-	poetry install --with dev
+	rm -f poetry.lock
+	rm -f requirements.txt
+	poetry install
+	poetry export --output requirements.txt
 
 clean:
 	deactivate

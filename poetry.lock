@@ -1533,13 +1533,13 @@ files = [
 
 [[package]]
 name = "openseries"
-version = "0.12.3"
+version = "0.12.4"
 description = "Package for simple financial time series analysis."
 category = "main"
 optional = false
 python-versions = ">=3.10,<3.12"
 files = [
-    {file = "openseries-0.12.3-py3-none-any.whl", hash = "sha256:d4af631dafc02f2f963cf5e5d88100d11f683e08ab79f32642dc84abe3fe3c2d"},
+    {file = "openseries-0.12.4-py3-none-any.whl", hash = "sha256:6ae890c327a4095c1eaa47a4104537ad9d2c6caf999f0d8d85a088f96cd44eda"},
 ]
 
 [package.dependencies]
@@ -2715,4 +2715,4 @@ test = ["mypy", "pre-commit", "pytest", "pytest-asyncio", "websockets (>=10.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "1a4ad8d5d40226ad818aea930b270ec1809a36ac3424ef7b3388f77f1fa9c676"
+content-hash = "dc00e0f16dced6d8a25169b8bcf066f344d74bb9cd4adc9ef7302397ff818934"

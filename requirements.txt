@@ -512,8 +512,8 @@ numpy==1.24.2 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:eef70b4fc1e872ebddc38cddacc87c19a3709c0e3e5d20bf3954c147b1dd941d \
     --hash=sha256:f64bb98ac59b3ea3bf74b02f13836eb2e24e48e0ab0145bbda646295769bd780 \
     --hash=sha256:f9006288bcf4895917d02583cf3411f98631275bc67cce355a7f39f8c14338fa
-openseries==0.12.3 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:d4af631dafc02f2f963cf5e5d88100d11f683e08ab79f32642dc84abe3fe3c2d
+openseries==0.12.4 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:6ae890c327a4095c1eaa47a4104537ad9d2c6caf999f0d8d85a088f96cd44eda
 packaging==23.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2 \
     --hash=sha256:b6ad297f8907de0fa2fe1ccbd26fdaf387f5f47c7275fedf8cce89f99446cf97

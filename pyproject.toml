@@ -44,7 +44,7 @@ keywords = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 jupyter_contrib_nbextensions = "^0.7.0"
-jupyterlab = "^3.6.2"
-notebook = "^6.5.3"
-openseries = "^0.12.3"
+jupyterlab = "^3.6.3"
+notebook = "^6.5.4"
+openseries = "^0.12.4"
 rise = "^5.7.1"

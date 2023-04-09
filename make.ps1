@@ -13,7 +13,10 @@ if ($task -eq "active") {
     .\venv\Scripts\activate
     python -m pip install --upgrade pip
     pip install poetry==1.4.2
+    Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry install
+    poetry export --output requirements.txt
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
     Remove-Item -Path ".\venv" -Recurse -Force
