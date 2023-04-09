@@ -2,9 +2,6 @@
 .venv
 venv/
 
-# Poetry / Dependency Management
-requirements.txt
-
 # Jupyter Notebook
 .ipynb_checkpoints/*
 
