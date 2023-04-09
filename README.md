@@ -34,8 +34,7 @@ jupyter notebook openseriesnotebook.ipynb
 jupyter nbconvert --to slides openseriesnotebook.ipynb --post serve
 ```
 
-### [Displayed on Nbviewer](https://nbviewer.org/github/karrmagadgeteer2/NoteBook/blob/master/openseriesnotebook.ipynb)
-
-Or run it on mybinder.org by clicking the logo below.
+### Rendered or run on Jupyter Nbviewer and Mybinder.org
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/karrmagadgeteer2/NoteBook.git/master?labpath=openseriesnotebook.ipynb)
+[![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/karrmagadgeteer2/NoteBook/blob/master/openseriesnotebook.ipynb)
