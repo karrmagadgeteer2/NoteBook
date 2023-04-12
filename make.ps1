@@ -19,7 +19,9 @@ if ($task -eq "active") {
     poetry export --output requirements.txt
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
-    Remove-Item -Path ".\venv" -Recurse -Force
+    Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
+    Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
 } else {
     # invalid task argument
     Write-Host "Only active, make or clean are allowed as tasks"

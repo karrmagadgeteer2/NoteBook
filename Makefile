@@ -13,3 +13,5 @@ install:
 clean:
 	deactivate
 	rm -rf venv
+	rm -f poetry.lock
+	rm -f requirements.txt

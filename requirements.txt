@@ -312,9 +312,9 @@ jupyter-server-ydoc==0.8.0 ; python_version >= "3.10" and python_version < "3.12
 jupyter-server==2.5.0 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:9fde612791f716fd34d610cd939704a9639643744751ba66e7ee8fdc9cead07e \
     --hash=sha256:e6bc1e9e96d7c55b9ce9699ff6cb9a910581fe7349e27c40389acb67632e24c0
-jupyter-ydoc==0.2.3 ; python_version >= "3.10" and python_version < "3.12" \
-    --hash=sha256:3ac51abfe378c6aeb62a449e8f0241bede1205f0199b0d27429140cbba950f79 \
-    --hash=sha256:98db7785215873c64d7dfcb1b741f41df11994c4b3d7e2957e004b392d6f11ea
+jupyter-ydoc==0.2.4 ; python_version >= "3.10" and python_version < "3.12" \
+    --hash=sha256:a3f670a69135e90493ffb91d6788efe2632bf42c6cc42a25f25c2e6eddd55a0e \
+    --hash=sha256:d1a51c73ead6f6417bec0450f53c577a66abe8d43e9c2d8a1acaf7a17259f843
 jupyterlab-pygments==0.2.2 ; python_version >= "3.10" and python_version < "3.12" \
     --hash=sha256:2405800db07c9f770863bcf8049a529c3dd4d3e28536638bd7c1c01d2748309f \
     --hash=sha256:7405d7fde60819d905a9fa8ce89e4cd830e318cdad22a0030f7a901da705585d
