@@ -14,7 +14,6 @@ build-backend = "poetry.core.masonry.api"
 repository = "https://github.com/karrmagadgeteer2/NoteBook"
 
 classifiers = [
-    "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "License :: OSI Approved :: BSD License",
@@ -44,7 +43,7 @@ keywords = [
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
 jupyter_contrib_nbextensions = "^0.7.0"
-jupyterlab = "^3.6.3"
+jupyterlab = "^4.0.1"
 notebook = "^6.5.4"
-openseries = "0.12.9"
+openseries = "0.13.1"
 rise = "^5.7.1"

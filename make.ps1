@@ -12,7 +12,7 @@ if ($task -eq "active") {
     $env:PYTHONPATH = "$env:PYTHONPATH;$pwd"
     .\venv\Scripts\activate
     python -m pip install --upgrade pip
-    pip install poetry==1.4.2
+    pip install poetry==1.5.1
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry install
