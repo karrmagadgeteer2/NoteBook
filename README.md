@@ -29,6 +29,11 @@ make install
 jupyter notebook openseriesnotebook.ipynb
 ```
 
+### Or run it with jupyterlab:
+```
+jupyter lab
+```
+
 ### Or to run it as a slideshow: 
 ```
 jupyter nbconvert --to slides openseriesnotebook.ipynb --post serve

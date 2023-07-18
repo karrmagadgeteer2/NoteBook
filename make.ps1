@@ -17,6 +17,7 @@ if ($task -eq "active") {
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry install
     poetry export --output requirements.txt
+    jupyter serverextension enable --py jupyterlab --sys-prefix
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue

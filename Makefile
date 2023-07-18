@@ -9,6 +9,7 @@ install:
 	rm -f requirements.txt
 	poetry install
 	poetry export --output requirements.txt
+        jupyter serverextension enable --py jupyterlab --sys-prefix
 
 clean:
 	deactivate
