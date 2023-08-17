@@ -9,14 +9,14 @@ These instructions assume that you have a compatible Python version installed on
 you are OK to install this project in a virtual environment. If not, feel free to do it your own way.
 
 ### In Windows Powershell execute the below commands:
-```
+```powershell
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
-./make.ps1 -task make
+./make.ps1 make
 ```
 
 ### In a Mac Terminal execute the below commands:
-```
+```bash
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
 make
