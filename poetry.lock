@@ -1793,12 +1793,12 @@ et-xmlfile = "*"
 
 [[package]]
 name = "openseries"
-version = "1.2.3"
+version = "1.2.4"
 description = "Package for simple financial time series analysis."
 optional = false
 python-versions = ">=3.9,<3.12"
 files = [
-    {file = "openseries-1.2.3-py3-none-any.whl", hash = "sha256:32057b8bc8075609f17631eac007908ed2d7f0b5dbbc2e786149e41ee32c4750"},
+    {file = "openseries-1.2.4-py3-none-any.whl", hash = "sha256:55c0d5db9f7918b4f20632c8e5e3a3b31e8b1664dbb86410f131da2630c79214"},
 ]
 
 [package.dependencies]
@@ -1807,8 +1807,8 @@ holidays = ">=0.31,<0.32"
 numpy = ">=1.25.2,<2.0.0"
 openpyxl = ">=3.1.2,<4.0.0"
 pandas = ">=2.0.3,<3.0.0"
-plotly = ">=5.16.0,<6.0.0"
-pydantic = ">=2.2.1,<3.0.0"
+plotly = ">=5.16.1,<6.0.0"
+pydantic = ">=2.3.0,<3.0.0"
 python-dateutil = ">=2.8.2,<3.0.0"
 python-stdnum = ">=1.19,<2.0"
 scipy = ">=1.11.2,<2.0.0"
@@ -3219,4 +3219,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "d9b146abc4d09b70e3411f1568ab006fea3db7f63b3749309538361bbf0e2832"
+content-hash = "e3cf0ef6fd032bc538abc71c8f0e2dd1557826b822333f7f74824e55fdb272a3"
