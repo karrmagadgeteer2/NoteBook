@@ -12,12 +12,11 @@ if ($task -eq "active") {
     $env:PYTHONPATH = "$env:PYTHONPATH;$pwd"
     .\venv\Scripts\activate
     python -m pip install --upgrade pip
-    pip install poetry==1.5.1
+    pip install poetry==1.6.1
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry install
     poetry export --output requirements.txt
-    jupyter serverextension enable --py jupyterlab --sys-prefix
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue

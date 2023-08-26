@@ -13,6 +13,7 @@ you are OK to install this project in a virtual environment. If not, feel free t
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
 ./make.ps1 make
+
 ```
 
 ### In a Mac Terminal execute the below commands:
@@ -22,21 +23,19 @@ cd NoteBook
 make
 source source_me
 make install
+
 ```
 
 ### Then to run this notebook: 
 ```
 jupyter notebook openseriesnotebook.ipynb
+
 ```
 
 ### Or run it with jupyterlab:
 ```
 jupyter lab
-```
 
-### Or to run it as a slideshow: 
-```
-jupyter nbconvert --to slides openseriesnotebook.ipynb --post serve
 ```
 
 ### Rendered on Jupyter Nbviewer
