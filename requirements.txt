@@ -794,8 +794,8 @@ numpy==1.25.2 ; python_version >= "3.9" and python_version < "3.12" \
 openpyxl==3.1.2 ; python_version >= "3.9" and python_version < "3.12" \
     --hash=sha256:a6f5977418eff3b2d5500d54d9db50c8277a368436f4e4f8ddb1be3422870184 \
     --hash=sha256:f91456ead12ab3c6c2e9491cf33ba6d08357d802192379bb482f1033ade496f5
-openseries==1.3.1 ; python_version >= "3.9" and python_version < "3.12" \
-    --hash=sha256:2b1165914184e8eae924115655232662921646b586316ecd82e1855b52f9fd85
+openseries==1.3.2 ; python_version >= "3.9" and python_version < "3.12" \
+    --hash=sha256:424ec3e09ac880715866378f4ff1a50e9c42b948aef3d5570f999700ed5ec329
 overrides==7.4.0 ; python_version >= "3.9" and python_version < "3.12" \
     --hash=sha256:3ad24583f86d6d7a49049695efe9933e67ba62f0c7625d53c59fa832ce4b8b7d \
     --hash=sha256:9502a3cca51f4fac40b5feca985b6703a5c1f6ad815588a7ca9e285b9dca6757
