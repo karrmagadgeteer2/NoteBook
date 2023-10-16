@@ -11,7 +11,7 @@ if ($task -eq "active") {
     python -m venv ./venv
     $env:PYTHONPATH = "$env:PYTHONPATH;$pwd"
     .\venv\Scripts\activate
-    python -m pip install --upgrade pip
+    python.exe -m pip install --upgrade pip
     pip install poetry==1.6.1
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
