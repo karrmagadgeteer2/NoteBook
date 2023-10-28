@@ -1826,12 +1826,12 @@ et-xmlfile = "*"
 
 [[package]]
 name = "openseries"
-version = "1.4.0"
+version = "1.4.2"
 description = "Package for simple financial time series analysis."
 optional = false
 python-versions = ">=3.9,<3.12"
 files = [
-    {file = "openseries-1.4.0-py3-none-any.whl", hash = "sha256:fb0867bfe82a699db0c4f4457d9fe08a62686a4ea658e8721176a77050abd877"},
+    {file = "openseries-1.4.2-py3-none-any.whl", hash = "sha256:3646fb3b417a97357f4c312784a84934a0f9cc9a324d824db476a0ae7b5c4166"},
 ]
 
 [package.dependencies]
@@ -3303,4 +3303,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "c2d0f7ef462fccf6c3d33e9bade7bd912013b0549dbcc784e36d0b0a82a965c6"
+content-hash = "25d5ac70b28a72023514ab468268a68d87684d71354594c36e1c618eaa20a892"
