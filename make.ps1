@@ -12,10 +12,11 @@ if ($task -eq "active") {
     $env:PYTHONPATH = "$env:PYTHONPATH;$pwd"
     .\venv\Scripts\activate
     python.exe -m pip install --upgrade pip
-    pip install poetry==1.6.1
+    pip install poetry==1.7.0
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
-    poetry install
+    poetry config warnings.export false
+    poetry install --no-root
     poetry export --output requirements.txt
 } elseif ($task -eq "clean") {
     # remove virtual environment to start over
