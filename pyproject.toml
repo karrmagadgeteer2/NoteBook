@@ -45,6 +45,6 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
-jupyterlab = "^4.0.8"
+jupyterlab = "^4.0.9"
 notebook = "^7.0.6"
-openseries = "1.4.6"
+openseries = "1.4.8"
