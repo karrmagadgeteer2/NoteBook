@@ -3,12 +3,13 @@ width="81" height="100" align="left" float="right"/><br/>
 
 <br><br>
 
-# An introduction to the [openseries](https://github.com/CaptorAB/OpenSeries) Python package
+# An introduction to the [openseries](https://github.com/CaptorAB/openSeries) Python package
 
-These instructions assume that you have a compatible Python version installed on your machine and that 
+These instructions assume that you have a compatible Python version installed on your machine and that
 you are OK to install this project in a virtual environment. If not, feel free to do it your own way.
 
 ### In Windows Powershell execute the below commands:
+
 ```powershell
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
@@ -17,6 +18,7 @@ cd NoteBook
 ```
 
 ### In a Mac Terminal execute the below commands:
+
 ```bash
 git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
@@ -26,13 +28,15 @@ make install
 
 ```
 
-### Then to run this notebook: 
+### Then to run this notebook:
+
 ```
 jupyter notebook openseriesnotebook.ipynb
 
 ```
 
 ### Or run it with jupyterlab:
+
 ```
 jupyter lab
 
