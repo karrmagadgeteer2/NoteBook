@@ -60,5 +60,5 @@ if ($task -eq "active") {
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
 } else {
     # invalid task argument
-    Write-Host "Only active, make or clean are allowed as tasks"
+    Write-Output "Only active, make or clean are allowed as tasks"
 }
