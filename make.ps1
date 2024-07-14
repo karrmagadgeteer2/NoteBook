@@ -2,6 +2,8 @@ param (
     [string]$task = "active"
 )
 
+$ErrorActionPreference = 'Stop'
+
 # Function to get the latest Python 3.10 version from pyenv
 function Get-LatestPython310Version {
     $versions = pyenv versions --bare 3.10.*
@@ -9,7 +11,9 @@ function Get-LatestPython310Version {
     return $latestVersion
 }
 
-if ($task -eq "active") {
+if ($task -eq "active") 
+{
+    .\venv\Scripts\activate
     if ($null -ne $env:PYTHONPATH)
     {
         if (-not ($env:PYTHONPATH -match [regex]::Escape($PWD)))
@@ -27,10 +31,11 @@ if ($task -eq "active") {
         $env:PYTHONPATH = $PWD
         Write-Output "`nPYTHONPATH set to: $( $env:PYTHONPATH )"
     }
-    .\venv\Scripts\activate
     Write-Output "`nThe Python used in the '$(Split-Path -Leaf $env:VIRTUAL_ENV)' environment is:"
     Get-Command python
-} elseif ($task -eq "make") {
+} 
+elseif ($task -eq "make") 
+{
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
     if (Test-Path $env:USERPROFILE\.pyenv) {
         $latestVersion = Get-LatestPython310Version
@@ -51,6 +56,13 @@ if ($task -eq "active") {
         }
     }
     python -m venv ./venv
+    if ($?) {
+        Write-Host "Virtual environment 'venv' created successfully." -ForegroundColor Green
+    } else {
+        Write-Host "Failed to create virtual environment 'venv'." -ForegroundColor Red
+        exit 1
+    }
+    .\venv\Scripts\activate
     if ($null -ne $env:PYTHONPATH)
     {
         if (-not ($env:PYTHONPATH -match [regex]::Escape($PWD)))
@@ -68,7 +80,6 @@ if ($task -eq "active") {
         $env:PYTHONPATH = $PWD
         Write-Output "`nPYTHONPATH set to: $( $env:PYTHONPATH )"
     }
-    .\venv\Scripts\activate
     Write-Output "`nThe Python used in the '$(Split-Path -Leaf $env:VIRTUAL_ENV)' environment is:"
     Get-Command python
     python.exe -m pip install --upgrade pip
@@ -79,11 +90,9 @@ if ($task -eq "active") {
     poetry install --no-root
     poetry export --output requirements.txt
 } elseif ($task -eq "clean") {
-    # remove virtual environment to start over
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
 } else {
-    # invalid task argument
     Write-Output "Only active, make or clean are allowed as tasks"
 }
