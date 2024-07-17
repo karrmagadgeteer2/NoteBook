@@ -1,4 +1,4 @@
-<img src="https://sales.captor.se/captor_logo_sv_1600_icketransparent.png" alt="Captor Fund Management AB" 
+<img src="https://sales.captor.se/captor_logo_sv_1600_icketransparent.png" alt="Captor Fund Management AB"
 width="81" height="100" align="left" float="right"/><br/>
 
 <br><br>

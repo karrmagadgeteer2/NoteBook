@@ -11,7 +11,7 @@ function Get-LatestPython310Version {
     return $latestVersion
 }
 
-if ($task -eq "active") 
+if ($task -eq "active")
 {
     .\venv\Scripts\activate
     if ($null -ne $env:PYTHONPATH)
@@ -33,8 +33,8 @@ if ($task -eq "active")
     }
     Write-Output "`nThe Python used in the '$(Split-Path -Leaf $env:VIRTUAL_ENV)' environment is:"
     Get-Command python
-} 
-elseif ($task -eq "make") 
+}
+elseif ($task -eq "make")
 {
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
     if (Test-Path $env:USERPROFILE\.pyenv) {
@@ -87,7 +87,7 @@ elseif ($task -eq "make")
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry config warnings.export false
-    poetry install --no-root
+    poetry install --no-root --with dev
     poetry export --output requirements.txt
 } elseif ($task -eq "clean") {
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
