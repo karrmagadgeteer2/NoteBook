@@ -89,7 +89,10 @@ elseif ($task -eq "make")
     poetry config warnings.export false
     poetry install --no-root --with dev
     poetry export --output requirements.txt
-} elseif ($task -eq "clean") {
+    poetry run pre-commit install
+}
+elseif ($task -eq "clean")
+{
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
