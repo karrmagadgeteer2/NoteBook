@@ -87,9 +87,8 @@ elseif ($task -eq "make")
     Remove-Item -Path 'poetry.lock' -Force -ErrorAction SilentlyContinue
     Remove-Item -Path 'requirements.txt' -Force -ErrorAction SilentlyContinue
     poetry config warnings.export false
-    poetry install --no-root --with dev
+    poetry install --no-root
     poetry export --output requirements.txt
-    poetry run pre-commit install
 }
 elseif ($task -eq "clean")
 {
