@@ -48,5 +48,5 @@ notebook = ">=7.1.1,<8.0.0"
 openseries = ">=1.4.9,<2.0.0"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = "^3.7.1"
+pre-commit = "^3.8.0"
 nbstripout = "^0.7.1"
