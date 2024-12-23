@@ -4,10 +4,10 @@ param (
 
 $ErrorActionPreference = 'Stop'
 
-# Function to get the latest Python 3.13 version from pyenv
-function Get-LatestPython313Version {
-    $versions = pyenv versions --bare 3.13.*
-    $latestVersion = $versions | Where-Object { $_ -match '^3\.13\.\d+$' } | Sort-Object -Descending | Select-Object -First 1
+# Function to get the latest Python 3.10 version from pyenv
+function Get-LatestPython310Version {
+    $versions = pyenv versions --bare 3.10.*
+    $latestVersion = $versions | Where-Object { $_ -match '^3\.10\.\d+$' } | Sort-Object -Descending | Select-Object -First 1
     return $latestVersion
 }
 
@@ -38,21 +38,21 @@ elseif ($task -eq "make")
 {
     Remove-Item -Path ".\venv" -Recurse -Force -ErrorAction SilentlyContinue
     if (Test-Path $env:USERPROFILE\.pyenv) {
-        $latestVersion = Get-LatestPython313Version
+        $latestVersion = Get-LatestPython310Version
         if ($latestVersion) {
             pyenv global $latestVersion
             pyenv local $latestVersion
             Remove-Item -Path '.python-version' -Force -ErrorAction SilentlyContinue
             Write-Output "Python $latestVersion set as both local and global version using pyenv."
         } else {
-            Write-Warning "No Python 3.13 versions found with pyenv."
+            Write-Warning "No Python 3.10 versions found with pyenv."
         }
     } else {
         $pythonVersion = python --version 2>&1
-        if ($pythonVersion -like "*3.13*") {
-            Write-Output "Python 3.13 is identified as the system's Python version."
+        if ($pythonVersion -like "*3.10*") {
+            Write-Output "Python 3.10 is identified as the system's Python version."
         } else {
-            Write-Warning "Python 3.13 is not installed or configured. Please install Python 3.13 or pyenv."
+            Write-Warning "Python 3.10 is not installed or configured. Please install Python 3.10 or pyenv."
         }
     }
     python -m venv ./venv
