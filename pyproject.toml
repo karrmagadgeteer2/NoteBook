@@ -1,50 +1,28 @@
-[tool.poetry]
-description = "An introduction to the openseries Python package."
-authors = ["Martin Karrin <martin.karrin@captor.se>"]
+[project]
+name = "openseriesnotebook"
+version = "1.0.0"
+description = "NoteBook examples for the openseries Python package."
+authors = [
+    { name = "Martin Karrin", email = "martin.karrin@captor.se" },
+]
+maintainers = [
+    { name = "Martin Karrin", email = "martin.karrin@captor.se" },
+]
 license = "BSD-3-Clause"
 readme = "README.md"
+requires-python = ">=3.10,<3.14"
 package-mode = false
 
-[build-system]
-requires = ["poetry-core>=1.8.4"]
-build-backend = "poetry.core.masonry.api"
+dependencies = [
+    "jupyterlab (>=4.1.3)",
+    "notebook (>=7.1.1)",
+    "openseries (>=1.4.9)",
+    "ipywidgets (>=8.1.3)"
+]
 
 [project.urls]
 repository = "https://github.com/karrmagadgeteer2/NoteBook"
 
-classifiers = [
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-    "License :: OSI Approved :: BSD License",
-    "Intended Audience :: Financial and Insurance Industry",
-    "Topic :: Office/Business :: Financial :: Investment",
-    "Natural Language :: English",
-    "Development Status :: 5 - Production/Stable",
-    "Operating System :: OS Independent",
-]
-
-keywords = [
-    "python",
-    "python3",
-    "plotly",
-    "pandas",
-    "finance",
-    "fintech",
-    "data-science",
-    "timeseries",
-    "timeseries-data",
-    "timeseries-analysis",
-    "investment",
-    "investment-analysis",
-    "investing"
-]
-
-[tool.poetry.dependencies]
-python = ">=3.10,<3.14"
-jupyterlab = ">=4.1.3,<5.0.0"
-notebook = ">=7.1.1,<8.0.0"
-openseries = ">=1.4.9,<2.0.0"
-ipywidgets = "^8.1.3"
+[build-system]
+requires = ["poetry-core>=2.1.1"]
+build-backend = "poetry.core.masonry.api"
