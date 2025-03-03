@@ -604,14 +604,14 @@ files = [
 
 [[package]]
 name = "holidays"
-version = "0.67"
+version = "0.68"
 description = "Open World Holidays Framework"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "holidays-0.67-py3-none-any.whl", hash = "sha256:174b64b9c23ef97600b32f4c44d4cf685223d75188dd746bce185fcbcdfd0522"},
-    {file = "holidays-0.67.tar.gz", hash = "sha256:d9a21be2c01e68f28bae1544a36736566830b065f467b59bca32caefb4c4487f"},
+    {file = "holidays-0.68-py3-none-any.whl", hash = "sha256:368022e67afddb1f60a780b65a0892802f171720812a60955e9c978d81aaca19"},
+    {file = "holidays-0.68.tar.gz", hash = "sha256:c47d19be8bc297ff2ed2ca5d73cc37b47c887d1d85e1ab5e628f19c7c6699b99"},
 ]
 
 [package.dependencies]
@@ -755,15 +755,15 @@ test-extra = ["curio", "ipython[test]", "matplotlib (!=3.2.0)", "nbformat", "num
 
 [[package]]
 name = "ipython"
-version = "9.0.0"
+version = "9.0.1"
 description = "IPython: Productive Interactive Computing"
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 markers = "python_version >= \"3.11\""
 files = [
-    {file = "ipython-9.0.0-py3-none-any.whl", hash = "sha256:2cce23069b830a54a5b9d3d66ccd6433047c1503a7b9a3b34593c0b5c2c08477"},
-    {file = "ipython-9.0.0.tar.gz", hash = "sha256:9368d65b3d4a471e9a698fed3ea486bbf6737e45111e915279c971b77f974397"},
+    {file = "ipython-9.0.1-py3-none-any.whl", hash = "sha256:3e878273824b52e0a2280ed84f8193aba8c4ba9a6f45a438348a3d5ef1a34bd0"},
+    {file = "ipython-9.0.1.tar.gz", hash = "sha256:377ea91c8226b48dc9021ac9846a64761abc7ddf74c5efe38e6eb06f6e052f3a"},
 ]
 
 [package.dependencies]
