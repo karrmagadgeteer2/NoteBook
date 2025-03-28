@@ -1280,6 +1280,30 @@ files = [
 typing-extensions = {version = "*", markers = "python_version < \"3.11\""}
 
 [[package]]
+name = "narwhals"
+version = "1.32.0"
+description = "Extremely lightweight compatibility layer between dataframe libraries"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "narwhals-1.32.0-py3-none-any.whl", hash = "sha256:8bdbf3f76155887412eea04b0b06303856ac1aa3d9e8bda5b5e54612855fa560"},
+    {file = "narwhals-1.32.0.tar.gz", hash = "sha256:bd0aa41434737adb4b26f8593f3559abc7d938730ece010fe727b58bc363580d"},
+]
+
+[package.extras]
+cudf = ["cudf (>=24.10.0)"]
+dask = ["dask[dataframe] (>=2024.8)"]
+duckdb = ["duckdb (>=1.0)"]
+ibis = ["ibis-framework (>=6.0.0)", "packaging", "pyarrow-hotfix", "rich"]
+modin = ["modin"]
+pandas = ["pandas (>=0.25.3)"]
+polars = ["polars (>=0.20.3)"]
+pyarrow = ["pyarrow (>=11.0.0)"]
+pyspark = ["pyspark (>=3.5.0)"]
+sqlframe = ["sqlframe (>=3.22.0)"]
+
+[[package]]
 name = "nbclient"
 version = "0.10.2"
 description = "A client library for executing notebooks. Formerly nbconvert's ExecutePreprocessor."
@@ -1497,25 +1521,25 @@ et-xmlfile = "*"
 
 [[package]]
 name = "openseries"
-version = "1.8.0"
+version = "1.8.1"
 description = "Tools for analyzing financial timeseries."
 optional = false
 python-versions = "<3.14,>=3.10"
 groups = ["main"]
 files = [
-    {file = "openseries-1.8.0-py3-none-any.whl", hash = "sha256:e3d5f01b096fcd667e1881f0f74ccd7ab126d384a8a329eb7e4e5262093518cd"},
-    {file = "openseries-1.8.0.tar.gz", hash = "sha256:7e509257b376c8747feda8e6f5ac62de925ee1fd5da027ff45c16b407413eed1"},
+    {file = "openseries-1.8.1-py3-none-any.whl", hash = "sha256:081f5e758e75058a6c366c9e08414b744acf2267c46db8f3a3240d61f4ed162e"},
+    {file = "openseries-1.8.1.tar.gz", hash = "sha256:c1f562de325171b2f2d722e17c534651cd25b7c2931fae27544d16fd08ddae10"},
 ]
 
 [package.dependencies]
 holidays = ">=0.30,<1.0"
 numpy = ">=1.23.2,<3.0.0"
-openpyxl = ">=3.1.2,<4.0.0"
+openpyxl = ">=3.1.2,<5.0.0"
 pandas = ">=2.1.2,<3.0.0"
-plotly = ">=5.18.0,<6.0.0"
-pyarrow = ">=14.0.2,<20.0.0"
+plotly = ">=5.18.0,<7.0.0"
+pyarrow = ">=14.0.2,<21.0.0"
 pydantic = ">=2.5.2,<3.0.0"
-python-dateutil = ">=2.8.2,<3.0.0"
+python-dateutil = ">=2.8.2,<4.0.0"
 requests = ">=2.20.0,<3.0.0"
 scipy = ">=1.11.4,<2.0.0"
 statsmodels = ">=0.14.0,<0.14.2 || >0.14.2,<1.0.0"
@@ -1712,19 +1736,22 @@ type = ["mypy (>=1.14.1)"]
 
 [[package]]
 name = "plotly"
-version = "5.24.1"
-description = "An open-source, interactive data visualization library for Python"
+version = "6.0.1"
+description = "An open-source interactive data visualization library for Python"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "plotly-5.24.1-py3-none-any.whl", hash = "sha256:f67073a1e637eb0dc3e46324d9d51e2fe76e9727c892dde64ddf1e1b51f29089"},
-    {file = "plotly-5.24.1.tar.gz", hash = "sha256:dbc8ac8339d248a4bcc36e08a5659bacfe1b079390b8953533f4eb22169b4bae"},
+    {file = "plotly-6.0.1-py3-none-any.whl", hash = "sha256:4714db20fea57a435692c548a4eb4fae454f7daddf15f8d8ba7e1045681d7768"},
+    {file = "plotly-6.0.1.tar.gz", hash = "sha256:dd8400229872b6e3c964b099be699f8d00c489a974f2cfccfad5e8240873366b"},
 ]
 
 [package.dependencies]
+narwhals = ">=1.15.1"
 packaging = "*"
-tenacity = ">=6.2.0"
+
+[package.extras]
+express = ["numpy"]
 
 [[package]]
 name = "prometheus-client"
@@ -2679,22 +2706,6 @@ scipy = ">=1.8,<1.9.2 || >1.9.2"
 build = ["cython (>=3.0.10)"]
 develop = ["colorama", "cython (>=3.0.10)", "cython (>=3.0.10,<4)", "flake8", "isort", "joblib", "matplotlib (>=3)", "pytest (>=7.3.0,<8)", "pytest-cov", "pytest-randomly", "pytest-xdist", "pywinpty ; os_name == \"nt\"", "setuptools-scm[toml] (>=8.0,<9.0)"]
 docs = ["ipykernel", "jupyter-client", "matplotlib", "nbconvert", "nbformat", "numpydoc", "pandas-datareader", "sphinx"]
-
-[[package]]
-name = "tenacity"
-version = "9.0.0"
-description = "Retry code until it succeeds"
-optional = false
-python-versions = ">=3.8"
-groups = ["main"]
-files = [
-    {file = "tenacity-9.0.0-py3-none-any.whl", hash = "sha256:93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"},
-    {file = "tenacity-9.0.0.tar.gz", hash = "sha256:807f37ca97d62aa361264d497b0e31e92b8027044942bfa756160d908320d73b"},
-]
-
-[package.extras]
-doc = ["reno", "sphinx"]
-test = ["pytest", "tornado (>=4.5)", "typeguard"]
 
 [[package]]
 name = "terminado"
