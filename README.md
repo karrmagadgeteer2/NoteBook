@@ -34,13 +34,6 @@ jupyter notebook openseriesnotebook.ipynb
 
 ```
 
-### Or run it with jupyterlab:
-
-```
-jupyter lab
-
-```
-
 ### Rendered on Jupyter Nbviewer
 
 [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/karrmagadgeteer2/NoteBook/blob/master/openseriesnotebook.ipynb)
