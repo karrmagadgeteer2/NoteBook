@@ -604,14 +604,14 @@ files = [
 
 [[package]]
 name = "holidays"
-version = "0.71"
+version = "0.72"
 description = "Open World Holidays Framework"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "holidays-0.71-py3-none-any.whl", hash = "sha256:15803b167b71d9ca3e45198db84ed7fce15912b81ab27ba916b088f4a8f704f3"},
-    {file = "holidays-0.71.tar.gz", hash = "sha256:3ebd9c9de0927bee90ea7bfb551c2a030ef139cf6381c7a23add94d061787466"},
+    {file = "holidays-0.72-py3-none-any.whl", hash = "sha256:0b61993adbf369373b6a678f4cbdf98ff87a2a93d93cce7b3fc1ec672af949af"},
+    {file = "holidays-0.72.tar.gz", hash = "sha256:27f2383ac8aac12c8c3400c10e7e4ee2842a59b586c54270625b4388983bf27f"},
 ]
 
 [package.dependencies]
@@ -1073,14 +1073,14 @@ test = ["jupyter-server (>=2.0.0)", "pytest (>=7.0)", "pytest-jupyter[server] (>
 
 [[package]]
 name = "jupyterlab"
-version = "4.4.1"
+version = "4.4.2"
 description = "JupyterLab computational environment"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "jupyterlab-4.4.1-py3-none-any.whl", hash = "sha256:989bca3f9cf2d04b2022e7e657e2df6d4aca808b364810d31c4865edd968a5f7"},
-    {file = "jupyterlab-4.4.1.tar.gz", hash = "sha256:c75c4f33056fbd84f0b31eb44622a00c7a5f981b85adfeb198a83721f0465808"},
+    {file = "jupyterlab-4.4.2-py3-none-any.whl", hash = "sha256:857111a50bed68542bf55dca784522fe728f9f88b4fe69e8c585db5c50900419"},
+    {file = "jupyterlab-4.4.2.tar.gz", hash = "sha256:afa9caf28c0cb966488be18e5e8daba9f018a1c4273a406b7d5006344cbc6d16"},
 ]
 
 [package.dependencies]
@@ -1247,14 +1247,14 @@ typing-extensions = {version = "*", markers = "python_version < \"3.11\""}
 
 [[package]]
 name = "narwhals"
-version = "1.37.1"
+version = "1.38.0"
 description = "Extremely lightweight compatibility layer between dataframe libraries"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "narwhals-1.37.1-py3-none-any.whl", hash = "sha256:6f358a23b7351897d6efb45496dc0528918ce4ca6c8f9631594885cd873576a7"},
-    {file = "narwhals-1.37.1.tar.gz", hash = "sha256:1eb8f17ff00e6c471d5afb704e9068f41657234eb73bde2ee66ad975a170015b"},
+    {file = "narwhals-1.38.0-py3-none-any.whl", hash = "sha256:148de8f1bec24644e260f6f2fe9b8e2e435f49ad13537a5261f0de34701e9153"},
+    {file = "narwhals-1.38.0.tar.gz", hash = "sha256:0a356a21ad00de0db0e631332a823a6a6755544bd10b8e68a02d75029c71392e"},
 ]
 
 [package.extras]
@@ -1366,19 +1366,19 @@ files = [
 
 [[package]]
 name = "notebook"
-version = "7.4.1"
+version = "7.4.2"
 description = "Jupyter Notebook - A web-based notebook environment for interactive computing"
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "notebook-7.4.1-py3-none-any.whl", hash = "sha256:498f12cf567d95b20e780d62d52564ee4310248b3175e996b667b5808028e5d3"},
-    {file = "notebook-7.4.1.tar.gz", hash = "sha256:96894962b230013ea0c0a466e4e642c5aace25ba8c86686175b69990ef628ff9"},
+    {file = "notebook-7.4.2-py3-none-any.whl", hash = "sha256:9ccef602721aaa5530852e3064710b8ae5415c4e2ce26f8896d0433222755259"},
+    {file = "notebook-7.4.2.tar.gz", hash = "sha256:e739defd28c3f615a6bfb0a2564bd75018a9cc6613aa00bbd9c15e68eed2de1b"},
 ]
 
 [package.dependencies]
 jupyter-server = ">=2.4.0,<3"
-jupyterlab = ">=4.4.0rc0,<4.5"
+jupyterlab = ">=4.4.0,<4.5"
 jupyterlab-server = ">=2.27.1,<3"
 notebook-shim = ">=0.2,<0.3"
 tornado = ">=6.2.0"
