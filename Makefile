@@ -7,7 +7,8 @@ venv:
 install:
 	rm -f poetry.lock
 	rm -f requirements.txt
-	poetry install --no-root
+	poetry install --no-root --with dev
+	poetry run pre-commit install
 	poetry export --output requirements.txt
 
 clean:
