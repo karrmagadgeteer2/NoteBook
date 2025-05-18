@@ -2,18 +2,18 @@
 venv/
 
 # Jupyter Notebook
-.ipynb_checkpoints/*
+.ipynb_checkpoints/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
+# Poetry
+.poetry/
 
 # Pycharm
-.idea/*
+.idea/
 
 # Mac OSX
 .DS_Store
