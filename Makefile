@@ -13,7 +13,7 @@ install:
 
 update:
 	poetry update
-	poetry export --output requirements.txt
+	poetry export --output requirements.txt --without-hashes --all-groups
 
 clean:
 	rm -rf venv
