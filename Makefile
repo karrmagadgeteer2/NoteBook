@@ -11,6 +11,10 @@ install:
 	poetry run pre-commit install
 	poetry export --output requirements.txt
 
+update:
+	poetry update
+	poetry export --output requirements.txt
+
 clean:
 	rm -rf venv
 	rm -f poetry.lock

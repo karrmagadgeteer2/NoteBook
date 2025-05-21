@@ -3,7 +3,7 @@
     Admin script for setting up, activating, and cleaning your project venv with Poetry.
 
 .PARAMETER task
-    What to do: 'active', 'make', or 'clean'.
+    What to do: 'active', 'make', 'update', or 'clean'.
     Defaults to 'active'.
 #>
 
@@ -50,6 +50,15 @@ switch ($task) {
         Ensure-PythonPath
         Write-Output "`nUsing Python in venv '$(Split-Path $env:VIRTUAL_ENV -Leaf)':"
         python --version
+    }
+
+    "update" {
+        . .\venv\Scripts\Activate.ps1
+        Ensure-PythonPath
+        Write-Output "`nUsing Python in venv '$(Split-Path $env:VIRTUAL_ENV -Leaf)':"
+        python --version
+        poetry update
+        poetry export --output requirements.txt
     }
 
     "make" {
@@ -119,7 +128,7 @@ switch ($task) {
     }
 
     default {
-        Write-Error "Invalid task '$task'. Use active, make, or clean."
+        Write-Error "Invalid task '$task'. Use active, make, update, or clean."
         exit 1
     }
 }
