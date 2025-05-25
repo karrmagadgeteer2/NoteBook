@@ -8,7 +8,7 @@
 #>
 
 param (
-    [ValidateSet("active","make","clean")]
+    [ValidateSet("active","make","update","clean")]
     [string]$task = "active"
 )
 
@@ -58,7 +58,7 @@ switch ($task) {
         Write-Output "`nUsing Python in venv '$(Split-Path $env:VIRTUAL_ENV -Leaf)':"
         python --version
         poetry update
-        poetry export --output requirements.txt
+        poetry export --output requirements.txt --without-hashes --all-groups
     }
 
     "make" {

@@ -9,7 +9,7 @@ install:
 	rm -f requirements.txt
 	poetry install --no-root --with dev
 	poetry run pre-commit install
-	poetry export --output requirements.txt
+	poetry export --output requirements.txt --without-hashes --all-groups
 
 update:
 	poetry update
