@@ -30,7 +30,6 @@ git clone https://github.com/karrmagadgeteer2/NoteBook.git
 cd NoteBook
 make
 source source_me
-make install
 
 ```
 
