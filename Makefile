@@ -1,14 +1,14 @@
 .ONESHELL:
 
-.PHONY: all install test lint clean
+.PHONY: all install update clean
 
 all: install
 
 install:
-	python3 -m venv ./venv
+	python -m venv ./venv
 	venv/bin/python --version
 	venv/bin/python -m pip install --upgrade pip
-	venv/bin/pip install poetry==2.1.3
+	venv/bin/pip install poetry==2.2.0
 	@. venv/bin/activate && \
 	poetry install --no-root --with dev && \
 	poetry run pre-commit install && \
