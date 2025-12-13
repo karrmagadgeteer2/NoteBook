@@ -16,7 +16,7 @@ package-mode = false
 
 dependencies = [
     "notebook >=7.1.1",
-    "openseries >=1.4.9"
+    "openseries >=2.1.2"
 ]
 
 [project.urls]
@@ -30,4 +30,4 @@ build-backend = "poetry.core.masonry.api"
 poetry-plugin-export = ">=1.9"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = ">=3.7.1"
+pre-commit = ">=4.5.0"
