@@ -15,19 +15,19 @@ requires-python = ">=3.11,<3.15"
 package-mode = false
 
 dependencies = [
-    "notebook >=7.1.1",
-    "openseries >=2.1.2"
+    "notebook >=7.6.2",
+    "openseries >=2.1.10"
 ]
 
 [project.urls]
 repository = "https://github.com/karrmagadgeteer2/NoteBook"
 
 [build-system]
-requires = ["poetry-core>=2.2.1"]
+requires = ["poetry-core>=2.4.1"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.requires-plugins]
-poetry-plugin-export = ">=1.9"
+poetry-plugin-export = ">=1.10"
 
 [tool.poetry.group.dev.dependencies]
-pre-commit = ">=4.5.0"
+pre-commit = ">=4.6.2"
